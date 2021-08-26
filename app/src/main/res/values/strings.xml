@@ -15,4 +15,5 @@
     <string name="key_minus">-</string>
     <string name="key_multy">*</string>
     <string name="key_divide">/</string>
+    <string name="key_ravno">=</string>
 </resources>
