@@ -15,5 +15,7 @@
     <string name="key_minus">-</string>
     <string name="key_multy">*</string>
     <string name="key_divide">/</string>
-    <string name="key_ravno">=</string>
+    <string name="key_equal">=</string>
+    <string name="key_clear">C</string>
+    <string name="key_00">00</string>
 </resources>

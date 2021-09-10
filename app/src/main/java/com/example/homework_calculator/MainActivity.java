@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private String operator;
     private List<String> firstHolder;
     private List<String> secondHolder;
-    private Button btn_0, btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9, btnDiv, btnMulti, btnMis, btnAdd, btnEqual, btnDot;
+    private Button btn_00, btn_0, btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9, btnDiv, btnMulti, btnMis, btnAdd, btnEqual, btnDot;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +44,20 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     secondHolder.add("0");
                     formulaHolder = formulaHolder + "0";
+                }
+                displayFormula(formulaHolder);
+            }
+        });
+
+        this.btn_00.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isOperatorTriggered == true) {
+                    firstHolder.add("00");
+                    formulaHolder = formulaHolder + "00";
+                } else {
+                    secondHolder.add("00");
+                    formulaHolder = formulaHolder + "00";
                 }
                 displayFormula(formulaHolder);
             }
@@ -244,22 +258,23 @@ public class MainActivity extends AppCompatActivity {
     private void findByIds() {
         this.compute = (EditText) findViewById(R.id.compute);
         this.result = (EditText) findViewById(R.id.result);
-        this.btn_0 = (Button) findViewById(R.id.key_0);
-        this.btn_1 = (Button) findViewById(R.id.key_1);
-        this.btn_2 = (Button) findViewById(R.id.key_2);
-        this.btn_3 = (Button) findViewById(R.id.key_3);
-        this.btn_4 = (Button) findViewById(R.id.key_4);
-        this.btn_5 = (Button) findViewById(R.id.key_5);
-        this.btn_6 = (Button) findViewById(R.id.key_6);
-        this.btn_7 = (Button) findViewById(R.id.key_7);
-        this.btn_8 = (Button) findViewById(R.id.key_8);
-        this.btn_9 = (Button) findViewById(R.id.key_9);
-        this.btnDiv = (Button) findViewById(R.id.key_divide);
-        this.btnMis = (Button) findViewById(R.id.key_minus);
-        this.btnAdd = (Button) findViewById(R.id.key_plus);
-        this.btnDot = (Button) findViewById(R.id.key_dot);
-        this.btnMulti = (Button) findViewById(R.id.key_multy);
-        this.btnEqual = (Button) findViewById(R.id.key_ravno);
+        this.btn_0 = (Button) findViewById(R.id.btn_zero);
+        this.btn_00 = (Button) findViewById(R.id.btn_double_zero);
+        this.btn_1 = (Button) findViewById(R.id.btn_1);
+        this.btn_2 = (Button) findViewById(R.id.btn_2);
+        this.btn_3 = (Button) findViewById(R.id.btn_3);
+        this.btn_4 = (Button) findViewById(R.id.btn_4);
+        this.btn_5 = (Button) findViewById(R.id.btn_5);
+        this.btn_6 = (Button) findViewById(R.id.btn_6);
+        this.btn_7 = (Button) findViewById(R.id.btn_7);
+        this.btn_8 = (Button) findViewById(R.id.btn_8);
+        this.btn_9 = (Button) findViewById(R.id.btn_9);
+        this.btnDiv = (Button) findViewById(R.id.btn_percentage);
+        this.btnMis = (Button) findViewById(R.id.btn_division);
+        this.btnAdd = (Button) findViewById(R.id.btn_plus);
+        this.btnDot = (Button) findViewById(R.id.btn_dot);
+        this.btnMulti = (Button) findViewById(R.id.btn_multiply);
+        this.btnEqual = (Button) findViewById(R.id.btn_equal);
     }
 
     private void displayFormula(String number) {

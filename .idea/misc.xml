@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/YUREC SPACE/homework_calculator/app/src/main/res/drawable/equal_round_rectangle_buttons.xml" value="0.3828125" />
+        <entry key="..\:/YUREC SPACE/homework_calculator/app/src/main/res/drawable/func__round_rectangle_buttons.xml" value="0.3828125" />
         <entry key="..\:/YUREC SPACE/homework_calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/YUREC SPACE/homework_calculator/app/src/main/res/drawable/num__round_rectangle_buttons.xml" value="0.3828125" />
+        <entry key="..\:/YUREC SPACE/homework_calculator/app/src/main/res/layout/activity_calc_buttons.xml" value="0.2694746376811594" />
+        <entry key="..\:/YUREC SPACE/homework_calculator/app/src/main/res/layout/activity_calc_result.xml" value="0.2694746376811594" />
         <entry key="..\:/YUREC SPACE/homework_calculator/app/src/main/res/layout/activity_main.xml" value="0.18737826256330348" />
       </map>
     </option>
