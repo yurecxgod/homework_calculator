@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="functionButtonsBg">#FFFFFF</color>
+    <color name="functionButtonsTxt">#FFFFFF</color>
+    <color name="numbersButtonsBg">#FFFFFF</color>
+    <color name="numbersButtonsTxt">#333333</color>
+    <color name="equalButtonsBg">#FF612F</color>
+    <color name="equalButtonsTxt">#FFFFFF</color>
 </resources>
