@@ -1,8 +1,11 @@
 package com.example.homework_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.provider.SyncStateContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +15,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private SharedPreferences sharedPreferences;
     private EditText compute;
     private EditText result;
     private String formulaHolder;
@@ -253,6 +257,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void checkNightModeActivated() {
+        if (sharedPreferences.getBoolean(Constants.KEY_NIGHT_MODE, false)) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
+    }
+
+    private void saveNightModeState(boolean nightMode) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(Constants.KEY_NIGHT_MODE, nightMode).apply();
     }
 
     private void findByIds() {
